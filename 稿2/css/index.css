@@ -1,0 +1,460 @@
+html {
+    color: #000;
+    background: #fff;
+    overflow-y: scroll;
+    -webkit-text-size-adjust: 100%;
+    -ms-text-size-adjust: 100%
+}
+
+html * {
+    outline: 0;
+    -webkit-text-size-adjust: none;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    box-sizing: border-box;
+}
+
+html,
+body {
+    font-family: PingFang-Regular,Montserrat-Regular,'微软雅黑', "Helvetica Neue", Helvetica, Microsoft Yahei, Hiragino Sans GB, WenQuanYi Micro Hei, sans-serif;
+    line-height: 1;
+    font-size: 0.28rem;
+    color: #121212;
+    overflow-x: hidden;
+}
+
+body,
+div,
+dl,
+dt,
+dd,
+ul,
+ol,
+li,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+pre,
+code,
+form,
+fieldset,
+legend,
+input,
+textarea,
+p,
+blockquote,
+th,
+td,
+hr,
+button,
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+    margin: 0;
+    padding: 0
+}
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+main,
+menu,
+nav,
+section,
+summary {
+    display: block;
+}
+
+input,
+select,
+textarea {
+    font-size: 100%
+}
+
+input,
+textarea {
+    border: none;
+}
+
+textarea {
+    resize: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0
+}
+
+fieldset,
+img {
+    border: 0
+}
+
+address,
+caption,
+cite,
+code,
+dfn,
+em,
+th,
+var {
+    font-style: normal;
+    font-weight: 500
+}
+
+ol,
+ul {
+    list-style: none
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-size: 100%;
+    font-weight: 500
+}
+
+a {
+    text-decoration: none;
+    color:#121212;
+}
+
+.clear:after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.none {
+    display: none;
+}
+
+.fl {
+    float: left;
+}
+
+.fr {
+    float: right;
+}
+
+html,
+body {
+    width: 100%;
+    height: 100%;
+}
+
+/** 设置默认字体 **/
+@font-face {
+    font-family: PingFang-Regular;
+    src:url('../fonts/PingFang-Regular.otf');
+    src:url('../fonts/Montserrat-Regular.ttf'); 
+}
+/** 首页 **/
+.relative{
+    position: relative;
+}
+.indexbg {
+    background: rgb(244,244,244);
+}
+.layer{
+    display: flex;
+    box-sizing: border-box;
+    width:7.5rem;
+    background-color:white;
+    position: relative;
+    flex-wrap:wrap;
+}
+.last{
+    padding:0;
+    margin-top:0.3rem;
+}
+.layer img{
+    background-size: 100% 100%;
+}
+.main{
+    width:7.5rem;
+    height:7.5rem;
+}
+.main img{
+    width:7.5rem;
+    height:7.5rem;
+}
+.padding{
+    padding:0.3rem 0.3rem;
+    margin-top:0.3rem;
+}
+.padding:nth-child(3){
+    margin-top:0;
+}
+.layer:first-child{
+    padding:0;
+}
+.title{
+    width:100%;
+}
+.title h2{
+    font-size: 0.34rem;
+    font-weight: 900;
+}
+.index{
+    height:auto;
+    float:left;
+    display: block;
+}
+.point span{
+    font-size: 0.6rem;
+    color: #C5AB78;
+    letter-spacing: 0;
+}
+.point{
+    display:inline-block;
+    color: #C5AB78;
+    font-size: 0.28rem;
+    line-height: 0.73rem;
+    margin-top:0.3rem;
+}
+.oldprice{
+    display:inline;
+    font-size: 0.28rem;
+    color: #B8B8B8;
+}
+.nowchange{
+    height:0.73rem;
+    display:block;
+    font-size: 0.28rem;
+    text-align: right;
+    line-height: 1rem;
+    margin-top:0.3rem;
+}
+.list{
+    width:100%;
+}
+.list li{
+    width:3.35rem;
+    float:left;
+    list-style: none;
+    margin-bottom:0.2rem;
+    margin-right:0.2rem;
+}
+.list a{
+    color:#121212;
+}
+.list li:nth-child(even){
+    margin:0;
+}
+.list img{
+    width:100%;
+    height:auto;
+    background-size: 100% 100%;
+    border-radius: 0.08rem;
+}
+.list span{
+    color:rgb(197,171,120);
+    font-size:0.24rem;
+    margin:0 0.03rem;
+}
+.list p{
+    margin-bottom:0.02rem;
+    line-height: 0.4rem;
+}
+.count {
+    width:100%;
+    text-align: center;
+    font-size: 0.3rem;
+    background-image: linear-gradient(-134deg, #EBE4D3 0%, #E6D6B8 100%);
+    padding:0.29rem 0;
+}
+.count span{
+    font-size: 0.24rem;
+    width:0.44rem;
+    height:0.44rem;
+    border-radius: 0.04rem;
+    padding: 0.06rem;
+    background-color: black;
+    color:white;
+    margin:0 0.1rem;
+}
+.line{
+    margin-bottom:0.2rem;
+}
+.line img{
+    width:100%;
+    height:auto;
+    background-size: 100% 100%;
+    border-radius: 0.08rem;
+}
+.new1{
+    width:0.8rem;
+    height:0.3rem;
+    font-size:0.22rem;
+    border-radius: 0.02rem;
+    color:#C5AB78;
+    border: 0.02rem solid #C5AB78;
+    display: inline-block;
+    text-align: center;
+    margin-right:0.1rem;
+}
+.new2{
+    font-size:0.22rem;
+    width:1rem;
+    height:0.3rem;
+    border-radius: 0.02rem;
+    color:white;
+    border: 0.02rem solid #C5AB78;
+    background-color:  #C5AB78;
+    display: inline-block;
+    text-align: center;
+    margin-bottom:0.3rem;
+}
+.layer h1{
+    font-size:0.32rem;
+    color: #121212;
+    margin-bottom:0.2rem;
+}
+.word_left{
+    display: flex;
+    height:auto;
+    float: left;
+    flex-wrap: nowrap;
+}
+.word_left img{
+    width:0.24rem;
+    height:0.24rem;
+}
+.word_left h3{
+    font-size:0.28rem;
+}
+.icon{
+    width:0.24rem;
+    display: inline-block;
+}
+.word_right{
+    display:block;
+    font-size: 0.28rem;
+    float:right;
+}
+.more {
+    width:1.5rem;
+    height:0.56rem;
+    border:0.02rem #D8D8D8 solid;
+    background: white;
+    border-radius: 0.06rem;
+    text-align: center;
+    color:#121212;
+    line-height:0.56rem;
+}
+
+.word_grey{
+    color: #979797;
+}
+.top .word_grey{
+    float:right;
+}
+.margin_btm{
+    margin-bottom: 0.4rem;
+}
+.block{
+    display:block;
+}
+.head{
+    font-size:0.28rem;
+    font-weight: 900;
+}
+.top{
+    display: block;
+}
+.mid{
+    margin-top:0.2rem;
+    display:block;
+}
+.mid span{
+    width:4.2rem;
+    height:0.66rem;
+}
+.location{
+    line-height:0.33rem;
+    width:3.96rem;
+    height:0.66rem;
+}
+.footer{
+    padding:0.4rem 0;
+    width: 7.5rem;
+    height:1.92rem;
+    text-align:center;
+}
+.bg_grey{
+    background: rgb(244,244,244);
+    font-size:0.24rem;
+    margin-left:0.3rem;
+}
+.word_gold{
+    font-size:0.22rem;
+    color:#C5AB78;
+}
+.time_tips{
+    margin-top:0.2rem;
+    width:2.2rem;
+    height:1.5rem;
+    line-height:0.5rem;
+    font-size:0.22rem;
+}
+.condition{
+    font-size:0.22rem;
+    line-height:0.4rem;
+}
+.layer ol{
+    list-style-type:decimal;
+
+    line-height: 0.4rem;
+    padding:0 0.2rem;
+}
+.layer ol li{
+    font-size:0.22rem;
+}
+.time{
+    margin-top:0.2rem;
+    height:1.5rem;
+    line-height:0.5rem;
+    font-size:0.22rem;
+}
+.footer h2{
+    font-size: 0.24rem;
+}
+.footer p{
+    font-size: 0.22rem;
+    margin:0.1rem;
+    color: #777777;
+}
+.danjia{
+    width:5rem;
+    height:1.1rem;
+    line-height: 1.1rem;
+    padding-left:0.3rem;
+}
+.duihuan{
+    width:2.5rem;
+    height:1.1rem;
+    text-align: center;
+    line-height:1.1rem;
+    background: #121212;
+    color:#FFF;
+    font-size:0.34rem;
+}
