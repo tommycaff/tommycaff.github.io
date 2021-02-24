@@ -1,0 +1,359 @@
+html {
+    color: #000;
+    background: #fff;
+    overflow-y: scroll;
+    -webkit-text-size-adjust: 100%;
+    -ms-text-size-adjust: 100%
+}
+
+html * {
+    outline: 0;
+    -webkit-text-size-adjust: none;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    box-sizing: border-box;
+}
+
+html,
+body {
+    font-family: PingFang-Regular,Montserrat-Regular,'微软雅黑', "Helvetica Neue", Helvetica, Microsoft Yahei, Hiragino Sans GB, WenQuanYi Micro Hei, sans-serif;
+    line-height: 1;
+    font-size: 0.24rem;
+    color: #121212;
+    overflow-x: hidden;
+}
+
+body,
+div,
+dl,
+dt,
+dd,
+ul,
+ol,
+li,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+pre,
+code,
+form,
+fieldset,
+legend,
+input,
+textarea,
+p,
+blockquote,
+th,
+td,
+hr,
+button,
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+    margin: 0;
+    padding: 0
+}
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+main,
+menu,
+nav,
+section,
+summary {
+    display: block;
+}
+
+input,
+select,
+textarea {
+    font-size: 100%
+}
+
+input,
+textarea {
+    border: none;
+}
+
+textarea {
+    resize: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0
+}
+
+fieldset,
+img {
+    border: 0
+}
+
+address,
+caption,
+cite,
+code,
+dfn,
+em,
+th,
+var {
+    font-style: normal;
+    font-weight: 500
+}
+
+ol,
+ul {
+    list-style: none
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-size: 100%;
+    font-weight: 500
+}
+
+a {
+    text-decoration: none
+}
+
+.clear:after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.none {
+    display: none;
+}
+
+.fl {
+    float: left;
+}
+
+.fr {
+    float: right;
+}
+
+html,
+body {
+    width: 100%;
+    height: 100%;
+}
+
+/** 设置默认字体 **/
+@font-face {
+    font-family: PingFang-Regular;
+    src:url('../fonts/PingFang-Regular.otf');
+    src:url('../fonts/Montserrat-Regular.ttf'); 
+}
+/** 首页 **/
+.relative{
+    position: relative;
+}
+.indexbg {
+    background: rgb(244,244,244);
+}
+.layer{
+    display: flex;
+    box-sizing: border-box;
+    width:7.5rem;
+    background-color:white;
+    position: relative;
+    flex-wrap:wrap;
+}
+.layer img{
+    background-size: 100% 100%;
+}
+.padding{
+    padding:0 0.3rem;
+    padding-top: 0.3rem;
+    margin-top:0.3rem;
+}
+.layer:first-child{
+    padding:0;
+}
+.gps img{
+    max-height:0.3rem;
+}
+.gps{
+    
+    display:flex;
+    align-items: center;
+    background: rgba(0, 0, 0, 0.3);
+    position: absolute;
+    width:2.3rem;
+    height:0.4rem;
+    left:0.1725rem;
+    top:0.1725rem;
+    text-align:center;
+    border-radius: 0.235rem;
+    font-size: 0.24rem;
+    color: #FFFFFF;
+    padding-left:0.2rem;
+}
+.gps span{
+    margin-left:0.1rem;
+}
+.swiper{
+    background-size: 100% 100%;
+    width:100%;
+    height:3rem;
+    background-image: url("../images/1.png");
+}
+.myprice{
+    display: inline-block;
+    width:50%;
+    height:0.68rem;
+    padding-top:0.22rem;
+    text-align:center;
+
+}
+.myprice p{
+    border-right:1px solid #D8D8D8;
+}
+.myprice span{
+    color:rgb(197,171,120)
+}
+.record{
+    display: inline-block;
+    width:50%;
+    height:0.68rem;
+    padding-top:0.22rem;
+    text-align:center;
+}
+.announcement{
+    width:100%;
+    font-size: 0.24rem;
+    margin-bottom:0.36rem;
+}
+.title{
+    width:100%;
+}
+.title span{
+    width:0.7rem;
+    height:0.34rem;
+    background: #121212;
+    color:white;
+    padding:0.03rem 0.13rem;
+    font-size:0.22rem;
+    border-radius: 0.04rem;
+    margin-right:0.13rem;
+}
+.list{
+    width:100%;
+}
+.list li{
+    width:3.35rem;
+    float:left;
+    list-style: none;
+    margin-bottom:0.2rem;
+    margin-right:0.2rem;
+}
+.list a{
+    color:#121212;
+}
+.list li:nth-child(even){
+    margin:0;
+}
+.list img{
+    width:100%;
+    height:auto;
+    background-size: 100% 100%;
+    border-radius: 0.08rem;
+}
+.list span{
+    color:rgb(197,171,120);
+    font-size:0.24rem;
+    margin:0 0.03rem;
+}
+.list p{
+    margin-bottom:0.02rem;
+    line-height: 0.4rem;
+}
+.count {
+    width:100%;
+    text-align: center;
+    font-size: 0.3rem;
+    margin-bottom:0.36rem;
+}
+.count span{
+    font-size: 0.24rem;
+    width:0.44rem;
+    height:0.44rem;
+    border-radius: 0.04rem;
+    padding: 0.06rem;
+    background-color: black;
+    color:white;
+    margin:0 0.1rem;
+}
+.line{
+    margin-bottom:0.2rem;
+}
+.line img{
+    width:100%;
+    height:auto;
+    background-size: 100% 100%;
+    border-radius: 0.08rem;
+}
+.new1{
+    width:0.8rem;
+    height:0.3rem;
+    font-size:0.22rem;
+    border-radius: 0.02rem;
+    color:#C5AB78;
+    border: 2px solid #C5AB78;
+    display: inline-block;
+    text-align: center;
+    margin-right:0.1rem;
+}
+.new2{
+    font-size:0.22rem;
+    width:1rem;
+    height:0.3rem;
+    border-radius: 0.02rem;
+    color:white;
+    border: 2px solid #C5AB78;
+    background-color:  #C5AB78;
+    display: inline-block;
+    text-align: center;
+    margin-bottom:0.3rem;
+}
+.layer h1{
+    font-size:0.32rem;
+    color: #121212;
+    margin-bottom:0.2rem;
+}
+.footer{
+    padding:0.4rem 0;
+    width: 7.5rem;
+    height:1.92rem;
+    text-align:center;
+}
+.footer h2{
+    font-size: 0.24rem;
+}
+.footer p{
+    font-size: 0.22rem;
+    margin:0.1rem;
+    color: #777777;
+}
