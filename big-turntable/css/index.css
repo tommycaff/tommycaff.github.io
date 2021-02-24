@@ -1,0 +1,448 @@
+html {
+    color: #000;
+    background: #fff;
+    overflow-y: scroll;
+    -webkit-text-size-adjust: 100%;
+    -ms-text-size-adjust: 100%
+}
+
+html * {
+    outline: 0;
+    -webkit-text-size-adjust: none;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    box-sizing: border-box;
+}
+
+html,
+body {
+    font-family: '微软雅黑', "Helvetica Neue", Helvetica, Microsoft Yahei, Hiragino Sans GB, WenQuanYi Micro Hei, sans-serif;
+    line-height: 1;
+    font-size: 0.24rem;
+    color: #333;
+    overflow-x: hidden;
+}
+
+body,
+div,
+dl,
+dt,
+dd,
+ul,
+ol,
+li,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+pre,
+code,
+form,
+fieldset,
+legend,
+input,
+textarea,
+p,
+blockquote,
+th,
+td,
+hr,
+button,
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+    margin: 0;
+    padding: 0
+}
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+main,
+menu,
+nav,
+section,
+summary {
+    display: block;
+}
+
+input,
+select,
+textarea {
+    font-size: 100%
+}
+
+input,
+textarea {
+    border: none;
+}
+
+textarea {
+    resize: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0
+}
+
+fieldset,
+img {
+    border: 0
+}
+
+address,
+caption,
+cite,
+code,
+dfn,
+em,
+th,
+var {
+    font-style: normal;
+    font-weight: 500
+}
+
+ol,
+ul {
+    list-style: none
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-size: 100%;
+    font-weight: 500
+}
+
+a {
+    text-decoration: none
+}
+
+.clear:after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.none {
+    display: none;
+}
+
+.fl {
+    float: left;
+}
+
+.fr {
+    float: right;
+}
+
+html,
+body {
+    width: 100%;
+    height: 100%;
+}
+
+/** 设置默认字体 **/
+@font-face {
+    font-family: Montserrat-Regular;
+    src: url('../fonts/Montserrat-Regular.ttf');
+}
+
+/** 首页 **/
+.indexbg {
+    background: #021012
+}
+
+.lucky-draw {
+    box-sizing: border-box;
+    width: 7.5rem;
+    /* min-height: 12.33rem; */
+    background: url("../images/bg.jpg") no-repeat;
+    background-size: 7.5rem 12.33rem;
+}
+
+.lucky-title {
+    margin-bottom: 3rem;
+    height: .76rem;
+    position: relative;
+}
+
+.lucky-description {
+    position: absolute;
+    top: .1rem;
+    left: .1rem;
+    background: url('../images/btn_description.png') no-repeat center;
+    background-size: 100% 100%;
+    width: 1.76rem;
+    height: .76rem;
+    font-size: 0;
+}
+
+.lucky-myprice {
+    position: absolute;
+    right: .1rem;
+    top: .1rem;
+    width: 1.75rem;
+    height: .76rem;
+    font-size: 0;
+    background: url('../images/btn_myprice.png') no-repeat center;
+    background-size: 100% 100%;
+}
+.lucky-draw-main{
+    position: relative;
+}
+
+.lucky-draw-turn-table {
+    /* position: absolute;
+    left: .2rem;
+    top: 3.65rem; */
+    margin: 0 auto;
+    width: 7.09rem;
+    height: 7.11rem;
+    background: url("../images/turn-table.png") no-repeat center;
+    background-size: contain;
+}
+
+.lucky-draw-pointer {
+    margin: 0 auto;
+    position: absolute;
+    left: 2.5rem;
+    top: 2.5rem;
+    width: 2.4rem;
+    height: 2.4rem;
+    background: url("../images/btn_lottery.png") no-repeat center;
+    background-size: contain;
+}
+
+.lucky-draw-pointer-veil {
+    position: absolute;
+    left: 50%;
+    top: 1.2rem;
+    z-index: 2;
+    margin-left: -1.11rem;
+    width: 2.22rem;
+    height: 2.52rem;
+    background-color: rgba(0, 0, 0, 0);
+}
+
+.lucky-draw-tips {
+    margin-bottom: 0.1rem;
+    font-size: 0.3rem;
+    color: #fff;
+    text-align: center;
+    font-family: Montserrat-Regular;
+}
+
+.lucky-draw-tips span {
+    margin: 0 0.05rem;
+    color: #fffb00;
+}
+
+.lucky-draw-tab {
+    height: 1.8rem;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.lucky-draw-tab a,
+.lucky-draw-tab a img {
+    width: 1.8rem;
+    height: 1.8rem;
+}
+
+.cover {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    display: none;
+}
+
+.cover-bg {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, .6)
+}
+
+.cover-main {
+    background: url('../images/lucky-cover-bg.png')no-repeat center;
+    background-size: 100% 100%;
+    width: 5.08rem;
+    height: 6.35rem;
+    left: 50%;
+    margin-left: -2.54rem;
+    position: absolute;
+    top: 2.15rem;
+    padding-top: 1.9rem;
+    text-align: center;
+}
+
+.cover-text {
+    font-size: .34rem;
+    color: #5e79ff;
+}
+
+.cover-text span {
+    color: #ff3221;
+}
+
+.cover-close {
+    background: url('../images/bt_delete.png')no-repeat center;
+    background-size: 100% 100%;
+    width: .66rem;
+    height: .66rem;
+    position: absolute;
+    bottom: 0.8rem;
+    left: 50%;
+    margin-left: -.33rem;
+    font-size: 0;
+}
+
+.cover-main2 {
+    background: url('../images/popups_description.png')no-repeat center;
+    background-size: 100% 100%;
+    width: 6.18rem;
+    height: 8.16rem;
+    left: 50%;
+    margin-left: -3.09rem;
+    position: absolute;
+    top: 2.15rem;
+    padding: 2rem 0.9rem 0 0.9rem;
+    font-size: 0.22rem;
+    line-height: 1.5;
+    color: #fff;
+}
+
+.cover-main3 {
+    background: url('../images/popups_myprice.png')no-repeat center;
+    background-size: 100% 100%;
+    width: 6.18rem;
+    height: 8.16rem;
+    left: 50%;
+    margin-left: -3.09rem;
+    position: absolute;
+    top: 2.15rem;
+    padding: 2rem 0.7rem 0 0.9rem;
+    font-size: 0.22rem;
+    line-height: 1.5;
+    color: #fff;
+}
+
+.pop {
+    display: none;
+}
+
+.word-scroll {
+    height: 5rem;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+
+.head {
+    background: rgba(255, 0, 240, 0.1);
+    width: 4.6rem;
+    height: 0.5rem;
+    line-height: 0.5rem;
+    font-size: 0.24rem;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.head span {
+    width: 3.3rem;
+    text-align: center;
+}
+
+.head span:last-child {
+    width: 1.3rem;
+}
+
+.item {
+    width: 4.6rem;
+    height: 1rem;
+    line-height: 1rem;
+    display: flex;
+    flex-wrap: wrap;
+    font-size: 0.24rem;
+    font-family: Montserrat-Regular;
+    border-bottom: 0.01rem solid #3e0a3f;
+}
+
+.item:last-child {
+    border-bottom: 0;
+}
+
+.item span {
+    width: 3.3rem;
+}
+
+.item span:last-child {
+    width: 1.3rem;
+    text-align: center;
+}
+
+.item i {
+    width: 0.6rem;
+    height: 0.6rem;
+    background: url("../images/prizeBg.png") no-repeat;
+    background-size: 0.6rem 0.6rem;
+    vertical-align: middle;
+    margin-right: 0.1rem;
+    display: inline-block;
+}
+
+.item i img {
+    width: 0.6rem;
+    height: 0.6rem;
+}
+
+.word-scroll::-webkit-scrollbar-track-piece {
+    background-color: rgba(0, 0, 0, 0);
+    border-left: 0.01rem solid rgba(0, 0, 0, 0);
+}
+
+.word-scroll::-webkit-scrollbar {
+    width: 0.05rem;
+    height: 0.2rem;
+    -webkit-border-radius: 0.05rem;
+    -moz-border-radius: 0.05rem;
+    border-radius: 0.05rem;
+}
+
+.word-scroll::-webkit-scrollbar-thumb {
+    background-color: rgba(216, 216, 216, 1);
+    background-clip: padding-box;
+    -webkit-border-radius: 0.05rem;
+    -moz-border-radius: 0.05rem;
+    border-radius: 0.05rem;
+    min-height: 0.4rem;
+}
+
+.word-scroll::-webkit-scrollbar-thumb:hover {
+    background-color: rgba(216, 216, 216, 1);
+    -webkit-border-radius: 0.05rem;
+    -moz-border-radius: 0.05rem;
+    border-radius: 0.05rem;
+}
